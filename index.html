@@ -19,7 +19,7 @@
     <style>
         body {
           min-height: 75rem;
-          padding-top: 4.5rem;
+          padding-top: 3.5rem;
         }
 
         .bd-placeholder-img {
@@ -43,20 +43,18 @@
                 height: 100%;
                 position: fixed;
             }
+        .navbar-container .navbar-collapse {
+        align-items: flex-start;
+        }
 
-            .navbar-container .navbar-collapse {
-                align-items: flex-start;
-            }
+        .navbar-container .nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        }
 
-            .navbar-container .nav {
-                flex-direction: column;
-                flex-wrap: nowrap;
-            }
-
-            .navbar-container .navbar-nav {
-                flex-direction: column !important;
-            }
-
+        .navbar-container .navbar-nav {
+        flex-direction: column !important;
+        }
 
 
         @media (min-width: 768px) {
@@ -66,7 +64,11 @@
             .col-lg-3 {
             flex: 0 0 auto;
             width: 22%;
-}
+            }
+            .col-lg-9 {
+            flex: 0 0 auto;
+            width: 78%;
+            }
         }
     </style>
 
@@ -100,6 +102,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#map">Мапа України з елементами НКС</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="heritage.html">Нематеріальна культурна спадщина</a>
                             </li>
                         </ul>
                     </div>
@@ -153,8 +158,11 @@
             </div>
             </div>
             </div>
-
-
+    <div class="news">
+     <marquee  direction="right" bgcolor="#ffcc00" direction="right">
+    roman-stefurak.github.io/unesco
+  </marquee>
+    </div>
 
 
 </body></html>
